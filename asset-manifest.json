@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/react-landing/static/css/main.d7da34c1.css",
+    "main.js": "/react-landing/static/js/main.4de380c6.js",
+    "static/media/video.mp4": "/react-landing/static/media/video.7d1ea6a94986d5c2a068.mp4",
+    "static/media/svg-4.svg": "/react-landing/static/media/svg-4.f600b9239ce3eaf88a776066cb1f4742.svg",
+    "static/media/svg-5.svg": "/react-landing/static/media/svg-5.cef380f736bfef1fcc9f0bb3a126e2fb.svg",
+    "static/media/svg-3.svg": "/react-landing/static/media/svg-3.d2c3ac5749449cf0eb1dfb758c661705.svg",
+    "static/media/svg-6.svg": "/react-landing/static/media/svg-6.0d5eafcfa1b4a30e0bbdaeb28bff572e.svg",
+    "static/media/svg-1.svg": "/react-landing/static/media/svg-1.2933c2418dd1decb6462f4a4b670c8d8.svg",
+    "static/media/svg-2.svg": "/react-landing/static/media/svg-2.a9c5e97ed81dc90a31505b236f17557c.svg",
+    "index.html": "/react-landing/index.html",
+    "main.d7da34c1.css.map": "/react-landing/static/css/main.d7da34c1.css.map",
+    "main.4de380c6.js.map": "/react-landing/static/js/main.4de380c6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d7da34c1.css",
+    "static/js/main.4de380c6.js"
+  ]
+}
