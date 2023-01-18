@@ -50,7 +50,7 @@ export const homeObjThree = {
   img: require('../../images/svg-2.svg').default,
   alt: 'Car',
   dark: false,
-  dark2: false,
+  dark2: true,
   darkText: true,
   primary: true,
 };
