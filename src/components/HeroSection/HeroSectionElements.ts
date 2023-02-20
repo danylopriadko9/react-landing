@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { MdArrowForward, MdKeyboardArrowRight } from 'react-icons/md';
-import { Interface } from 'readline';
 
 export const HeroContainer = styled.div`
   background-color: #0c0c0c;
@@ -39,7 +38,7 @@ export const HeroBg = styled.div`
 `;
 
 interface IVideoBg {
-  type: string;
+  type?: string;
 }
 
 export const VideoBg = styled.video<IVideoBg>`

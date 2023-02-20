@@ -3,7 +3,7 @@ import { Link as LinkR } from 'react-router-dom';
 import { Link as LinkS } from 'react-scroll';
 
 interface INav {
-  scrollNav: boolean;
+  scrollNav?: boolean;
 }
 
 export const Nav = styled.nav<INav>`
@@ -104,10 +104,10 @@ export const NavBth = styled.nav`
 `;
 
 interface NavBthLink {
-  spy: boolean;
-  duration: number;
-  smooth: boolean;
-  to: string;
+  spy?: boolean;
+  duration?: number;
+  smooth?: boolean;
+  to?: string;
 }
 
 export const NavBthLink = styled(LinkR)<NavBthLink>`

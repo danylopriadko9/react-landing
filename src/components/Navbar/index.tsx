@@ -15,10 +15,10 @@ import { IconContext } from 'react-icons/lib';
 import { animateScroll as scroll } from 'react-scroll';
 
 interface INavbar {
-  toggle: () => void;
+  toggle?: () => void;
 }
 
-const Navbar: React.FC<INavbar> = ({ toggle }) => {
+const Navbar: React.FC<INavbar> = ({ toggle }): JSX.Element => {
   const [scrollNav, setScrollNav] = React.useState<boolean>(false);
 
   const changeNav = () => {

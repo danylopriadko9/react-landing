@@ -4,7 +4,7 @@ import { Link as LinkS } from 'react-scroll';
 import { Link as LinkR } from 'react-router-dom';
 
 interface SidebarContainer {
-  isOpen: boolean;
+  isOpen?: boolean;
 }
 
 export const SidebarContainer = styled.aside<SidebarContainer>`

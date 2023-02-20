@@ -23,7 +23,7 @@ import {
 } from 'react-icons/fa';
 import { animateScroll as scroll } from 'react-scroll';
 
-const Footer: React.FC = () => {
+const Footer: React.FC = (): JSX.Element => {
   const toggleHome = () => {
     scroll.scrollToTop();
   };

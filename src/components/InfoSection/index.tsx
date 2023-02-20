@@ -31,7 +31,7 @@ const InfoSection: React.FC<ISection> = ({
   dark,
   dark2,
   primary,
-}) => {
+}): JSX.Element => {
   return (
     <InfoContainer lightBg={lightBg} id={id}>
       <InfoWrapper>

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 interface IInfoContainer {
-  lightBg: boolean;
+  lightBg?: boolean;
 }
 
 export const InfoContainer = styled.div<IInfoContainer>`
@@ -26,7 +26,7 @@ export const InfoWrapper = styled.div`
 `;
 
 interface IInfoRow {
-  imgStart: boolean;
+  imgStart?: boolean;
 }
 
 export const InfoRow = styled.div<IInfoRow>`
