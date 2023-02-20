@@ -11,8 +11,8 @@ import Services from '../components/Services';
 import Sidebar from '../components/Sidebar';
 import Footer from '../components/Footer';
 
-const Home = () => {
-  const [isOpen, setIsOpen] = React.useState(false);
+const Home: React.FC = () => {
+  const [isOpen, setIsOpen] = React.useState<boolean>(false);
 
   const toggle = () => {
     setIsOpen((prev) => !prev);

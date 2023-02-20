@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { MdArrowForward, MdKeyboardArrowRight } from 'react-icons/md';
+import { Interface } from 'readline';
 
 export const HeroContainer = styled.div`
   background-color: #0c0c0c;
@@ -37,7 +38,11 @@ export const HeroBg = styled.div`
   overflow: hidden;
 `;
 
-export const VideoBg = styled.video`
+interface IVideoBg {
+  type: string;
+}
+
+export const VideoBg = styled.video<IVideoBg>`
   width: 100%;
   height: 100%;
   -o-object-fit: cover;

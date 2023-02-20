@@ -23,10 +23,11 @@ import {
 } from 'react-icons/fa';
 import { animateScroll as scroll } from 'react-scroll';
 
-const Footer = () => {
+const Footer: React.FC = () => {
   const toggleHome = () => {
     scroll.scrollToTop();
   };
+
   return (
     <FooterContainer>
       <FooterWrap>

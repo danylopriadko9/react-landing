@@ -12,7 +12,7 @@ import {
   Form,
 } from './SignInElements';
 
-const SignInBlock = () => {
+const SignInBlock: React.FC<{}> = (): JSX.Element => {
   return (
     <Container>
       <FormWrap>

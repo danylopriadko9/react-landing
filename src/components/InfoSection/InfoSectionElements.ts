@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 
-export const InfoContainer = styled.div`
+interface IInfoContainer {
+  lightBg: boolean;
+}
+
+export const InfoContainer = styled.div<IInfoContainer>`
   color: #fff;
   background-color: ${({ lightBg }) => (lightBg ? '#f9f9f9' : '#010606')};
 
@@ -21,7 +25,11 @@ export const InfoWrapper = styled.div`
   justify-content: center;
 `;
 
-export const InfoRow = styled.div`
+interface IInfoRow {
+  imgStart: boolean;
+}
+
+export const InfoRow = styled.div<IInfoRow>`
   display: grid;
   grid-auto-columns: minmax(auto, 1fr);
   align-items: center;
@@ -59,7 +67,12 @@ export const TopLine = styled.p`
   text-transform: uppercase;
   margin-bottom: 16px;
 `;
-export const Heading = styled.h1`
+
+interface IHeading {
+  lightText?: boolean;
+}
+
+export const Heading = styled.h1<IHeading>`
   color: #000;
   margin-bottom: 24px;
   font-size: 48px;
@@ -71,7 +84,12 @@ export const Heading = styled.h1`
     font-size: 32px;
   }
 `;
-export const Subtitle = styled.p`
+
+interface ISubtitle {
+  darkText?: boolean;
+}
+
+export const Subtitle = styled.p<ISubtitle>`
   min-width: 440px;
   margin-bottom: 35px;
   font-size: 18px;

@@ -14,8 +14,12 @@ import { FaBars } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
 import { animateScroll as scroll } from 'react-scroll';
 
-const Navbar = ({ toggle }) => {
-  const [scrollNav, setScrollNav] = React.useState(false);
+interface INavbar {
+  toggle: () => void;
+}
+
+const Navbar: React.FC<INavbar> = ({ toggle }) => {
+  const [scrollNav, setScrollNav] = React.useState<boolean>(false);
 
   const changeNav = () => {
     if (window.scrollY >= 80) {
@@ -43,58 +47,28 @@ const Navbar = ({ toggle }) => {
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks
-                exact={true}
-                spy={true}
-                duration={500}
-                smooth={true}
-                to='about'
-              >
+              <NavLinks spy={true} duration={500} smooth={true} to='about'>
                 About
               </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks
-                exact={true}
-                spy={true}
-                duration={500}
-                smooth={true}
-                to='discover'
-              >
+              <NavLinks spy={true} duration={500} smooth={true} to='discover'>
                 Discover
               </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks
-                exact={true}
-                spy={true}
-                duration={500}
-                smooth={true}
-                to='services'
-              >
+              <NavLinks spy={true} duration={500} smooth={true} to='services'>
                 Services
               </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks
-                exact={true}
-                spy={true}
-                duration={500}
-                smooth={true}
-                to='signup'
-              >
+              <NavLinks spy={true} duration={500} smooth={true} to='signup'>
                 Sign Up
               </NavLinks>
             </NavItem>
           </NavMenu>
           <NavBth>
-            <NavBthLink
-              exact={true}
-              spy={true}
-              duration={500}
-              smooth={true}
-              to='signin'
-            >
+            <NavBthLink spy={true} duration={500} smooth={true} to='signin'>
               Sign In
             </NavBthLink>
           </NavBth>

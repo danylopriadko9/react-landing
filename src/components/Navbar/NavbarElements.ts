@@ -2,7 +2,11 @@ import styled from 'styled-components';
 import { Link as LinkR } from 'react-router-dom';
 import { Link as LinkS } from 'react-scroll';
 
-export const Nav = styled.nav`
+interface INav {
+  scrollNav: boolean;
+}
+
+export const Nav = styled.nav<INav>`
   background: ${({ scrollNav }) => (scrollNav ? '#000' : 'transparent')};
   height: 80px;
   display: flex;
@@ -69,7 +73,14 @@ export const NavItem = styled.li`
   height: 80px;
 `;
 
-export const NavLinks = styled(LinkS)`
+interface NavLinks {
+  spy?: boolean;
+  duration?: number;
+  smooth?: boolean;
+  to?: string;
+}
+
+export const NavLinks = styled(LinkS)<NavLinks>`
   color: #fff;
   display: flex;
   align-items: center;
@@ -92,7 +103,14 @@ export const NavBth = styled.nav`
   }
 `;
 
-export const NavBthLink = styled(LinkR)`
+interface NavBthLink {
+  spy: boolean;
+  duration: number;
+  smooth: boolean;
+  to: string;
+}
+
+export const NavBthLink = styled(LinkR)<NavBthLink>`
   border-radius: 50px;
   background-color: #01bf71;
   white-space: nowrap;

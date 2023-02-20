@@ -10,7 +10,12 @@ import {
   SidebarWrapper,
 } from './SidebarElements';
 
-const Sidebar = ({ toggle, isOpen }) => {
+interface ISidebar {
+  toggle: () => void;
+  isOpen: boolean;
+}
+
+const Sidebar: React.FC<ISidebar> = ({ toggle, isOpen }): JSX.Element => {
   return (
     <SidebarContainer isOpen={isOpen} onClick={toggle}>
       <Icon>

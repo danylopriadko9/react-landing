@@ -1,4 +1,6 @@
-export const homeObjOne = {
+import { ISection } from '../../types/types';
+
+export const homeObjOne: ISection = {
   id: 'about',
   lightBg: false,
   lightText: true,
@@ -17,7 +19,7 @@ export const homeObjOne = {
   primary: true,
 };
 
-export const homeObjTwo = {
+export const homeObjTwo: ISection = {
   id: 'discover',
   lightBg: true,
   lightText: false,
@@ -36,7 +38,7 @@ export const homeObjTwo = {
   primary: false,
 };
 
-export const homeObjThree = {
+export const homeObjThree: ISection = {
   id: 'signup',
   lightBg: true,
   lightText: false,

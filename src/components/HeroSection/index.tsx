@@ -13,12 +13,13 @@ import {
 import Video from '../../videos/video.mp4';
 import { Button } from '../ButtonElement';
 
-const HeroSection = () => {
-  const [hover, setHover] = React.useState(false);
+const HeroSection: React.FC = (): JSX.Element => {
+  const [hover, setHover] = React.useState<boolean>(false);
 
   const onHover = () => {
     setHover((prev) => !prev);
   };
+
   return (
     <HeroContainer id='home'>
       <HeroBg>

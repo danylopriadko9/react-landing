@@ -1,4 +1,5 @@
 import React from 'react';
+import { ISection } from '../../types/types';
 import { Button } from '../ButtonElement';
 import {
   BtnWrapper,
@@ -15,7 +16,7 @@ import {
   TopLine,
 } from './InfoSectionElements';
 
-const InfoSection = ({
+const InfoSection: React.FC<ISection> = ({
   lightBg,
   imgStart,
   id,
@@ -31,7 +32,6 @@ const InfoSection = ({
   dark2,
   primary,
 }) => {
-  console.log(darkText);
   return (
     <InfoContainer lightBg={lightBg} id={id}>
       <InfoWrapper>
@@ -47,7 +47,6 @@ const InfoSection = ({
                   smooth={true}
                   duration={500}
                   spy={true}
-                  exact={true}
                   offset={-80}
                   dark={dark}
                   dark2={dark2}
